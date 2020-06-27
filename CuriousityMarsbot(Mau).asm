@@ -61,7 +61,7 @@
 # do dai duong di ngay khi bat dau la 12 bytes (3x 4byte)  #Size cua path?
 #---------------------------------------------------------
 	path: .space 600
-	lengthPath: .word 12		#bytes
+	lengthPath: .word 12		#bytes #sizeOfPath thi dung hon
 
 #===============================================================================
 #===============================================================================
