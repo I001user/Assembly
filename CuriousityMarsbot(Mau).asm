@@ -232,14 +232,13 @@ goBack:
 	lw $s5, 0($s5)
 	add $s7, $s7, $s5
 begin:
-	
+	#xoa state(path) gan nhat khoi pathstack
 	addi $s5, $s5, -12 	#lui lai 1 structure
-	
 	addi $s7, $s7, -12	#vi tri cua thong tin ve canh cuoi cung
+	
+	#quay nguoc lai huong luc di de chuan bi di nguoc
 	lw $s6, 8($s7)		#huong cua canh cuoi cung
 	addi $s6, $s6, 180	#nguoc lai huong cua canh cuoi cung
-	
-	
 	la $t8, nowHeading	#marsbot quay nguoc lai
 	sw $s6, 0($t8)
 	jal ROTATE
